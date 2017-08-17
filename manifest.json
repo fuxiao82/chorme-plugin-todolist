@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "todoList",
+  "version":"0.0.1",
+  "description": "Management my everyday's task lists.",
+  "browser_action": {
+    "default_icon": "todo/todo.png" ,
+    "default_title": "My Task List",
+    "default_popup": "popup.html"
+  }
+}

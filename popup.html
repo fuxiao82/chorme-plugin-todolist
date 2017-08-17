@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            color: #333;
+            overflow: hidden;
+            margin: 0px;
+            padding: 5px;
+            background: white;
+            font-size: 12px;
+        }
+
+        img {
+            margin: 0 4px;
+        }
+
+        #addItemDiv {
+            color: #ccc;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .taskItem {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            min-width: 200px;
+            margin: 10px 5px;
+        }
+
+        input {
+            width: 100%;
+        }
+
+        label.on {
+            width: 18px;
+            display: inline-block;
+            height: 18px;
+            background: url(img/off.png) no-repeat 1px 0px;
+            margin: 0 8px 0 0;
+        }
+
+        label.off {
+            width: 18px;
+            display: inline-block;
+            height: 18px;
+            background: url(img/on.png) no-repeat 0px 0px;
+            margin: 0 8px 0 0;
+        }
+
+        #taskItemList {
+            margin: 20px 0 0 0;
+        }
+
+        .gray {
+            font-size: 16px;
+            font-weight:bold;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0 15px 0;
+            text-indent: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="newItem" class="gray">添加新项</div>
+<div id="addDiv" class="hide"><input type="text" id="txtTitle"/></div>
+<div id="taskItemList">
+    <div class="taskItem">
+        <label class="on"></label><span class="taskTitle">新任务</span>
+    </div>
+    <div class="taskItem">
+        <label class="off"></label><span class="taskTitle">已完成任务</span>
+    </div>
+</div>
+</body>
+</html>
+
